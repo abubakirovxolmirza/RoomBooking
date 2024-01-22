@@ -7,6 +7,13 @@ docker build -t booking:1.0 .
 docker run -p 1212:8000 booking:1.0
 ```
 
+.../api/register - Ro'yhatdan o'tish uchun
+.../api/token - Token olish uchun
+.../api/rooms/ - Barcha xonalarni ko'rish uchun
+.../api/book/room - Xona band qilish uchun
+.../api/room/<room_name> Xona haqida ma’lumot olish uchun
+
+
  HTTP so'rovlari va Javoblari
 
 Ro’yxatini o'tish uchun `GET` :`…/api/register`
