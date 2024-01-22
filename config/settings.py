@@ -136,10 +136,10 @@ WSGI_APPLICATION = 'config.wsgi.app'
 DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'room_booking',
-            'HOST': 'localhost',
-            'USER': 'postgres',
-            'PASSWORD': 'nodir12.',
+            'NAME': 'verceldb',
+            'HOST': 'ep-blue-queen-75951307-pooler.us-east-1.postgres.vercel-storage.com',
+            'USER': 'default',
+            'PASSWORD': 'MzTERP0jt7Ol',
         }
     }
 # except Exception:
