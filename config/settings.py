@@ -132,26 +132,25 @@ WSGI_APPLICATION = 'config.wsgi.app'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-try:
-    DATABASES = {
+# try:
+DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'DATABASE NAME',
-            'USER': 'DATABASE USER',
-            'PASSWORD': 'DATABASE PASSWORD',
+            'NAME': 'room_booking',
             'HOST': 'localhost',
-            'PORT': 5432,
+            'USER': 'postgres',
+            'PASSWORD': 'nodir12.',
         }
     }
-except Exception:
-    pass
-finally:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
-    }
+# except Exception:
+#     pass
+# finally:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#         }
+#     }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
